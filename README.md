@@ -23,7 +23,7 @@ you should set the application key as shown (replacing the key shown with
 the key you are provided with when you create your app):
 
 ```ruby
-Noti.application = '7f38ce2d-8d9a-25dd-e167-8f8a711b81f8'
+Noti.app = '7f38ce2d-8d9a-25dd-e167-8f8a711b81f8'
 ```
 
 ## Authenticating Users
