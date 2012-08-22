@@ -24,7 +24,7 @@ module Noti
     end
   
     def make
-      uri = URI.parse(["http://notiapp.com", "api/v1", @path].join('/'))
+      uri = URI.parse(["https://notiapp.com", "api/v1", @path].join('/'))
       http_request = http_class.new(uri.request_uri)
       http_request.initialize_http_header({"User-Agent" => "NotiRubyClient/#{Noti::VERSION}"})
       http_request.content_type = 'application/json'
