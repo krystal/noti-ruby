@@ -74,10 +74,11 @@ In order to send a notification to a user, simply run the method shown below:
 ```ruby
 # Create a new notification object
 notification = Noti::Notification.new
-notification.sub_title = "An example notification"
+notification.title = "An example notification"
 notification.text = "Some further information about this notification"
 notification.url = "http://myapp.com/example"
 notification.sound = "moo"
+notification.image = "example"
 
 # Set the user to send the notification to and deliver it
 notification.deliver_to('a96dca45-bd18-63bc-2b19-2b3f5ce711ca')

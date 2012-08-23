@@ -1,7 +1,7 @@
 module Noti
   class Notification
     
-    attr_accessor :title, :sub_title, :text, :sound, :url
+    attr_accessor :title, :text, :sound, :url, :image
     
     def deliver_to(user)
       data = {
@@ -9,10 +9,10 @@ module Noti
         :user => user,
         :notification => {
           :title => self.title,
-          :sub_title => self.sub_title,
           :text => self.text,
           :url => self.url,
-          :sound => self.sound
+          :sound => self.sound,
+          :image => self.image
         }
       }
       Noti::Request.request('add', data) && true
