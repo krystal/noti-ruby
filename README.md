@@ -77,7 +77,7 @@ notification = Noti::Notification.new
 notification.title = "An example notification"
 notification.text = "Some further information about this notification"
 notification.url = "http://myapp.com/example"
-notification.sound = "moo"
+notification.sound = "alert1"
 notification.image = "example"
 
 # Set the user to send the notification to and deliver it
