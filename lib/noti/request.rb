@@ -50,7 +50,7 @@ module Noti
       when Net::HTTPServiceUnavailable
         raise Noti::Errors::ServiceUnavailable
       when Net::HTTPForbidden, Net::HTTPUnauthorized
-        raise Noti::Errors::AccessDenied, "Access Denied for '#{Noti.application}'"
+        raise Noti::Errors::AccessDenied, "Access Denied for '#{Noti.app}'"
       when Net::HTTPNotFound
         json = JSON.parse(http_result.body)
         raise Noti::Errors::NotFound, json['error']
