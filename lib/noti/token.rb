@@ -15,6 +15,10 @@ module Noti
       request = Noti::Request.request("get_access_token", :app => Noti.app, :request_token => request_token)
       request['access_token']
     end
-    
+
+    def self.revoke_access_token(user)
+      Noti::Request.request("revoke", :app => Noti.app, :user => user)
+    end
+
   end
 end

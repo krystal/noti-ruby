@@ -87,3 +87,11 @@ notification.deliver_to('a96dca45-bd18-63bc-2b19-2b3f5ce711ca')
 notification.deliver_to('f1ed9821-0933-15d2-a4bc-b87f562424a0')
 ```
 
+## Revoke an access token
+
+To revoke an access token, simply run the method shown below:
+
+```ruby
+Noti::Token.revoke_access_token('a96dca45-bd18-63bc-2b19-2b3f5ce711ca')
+```
+
