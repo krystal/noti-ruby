@@ -92,6 +92,7 @@ notification.deliver_to('f1ed9821-0933-15d2-a4bc-b87f562424a0')
 To revoke an access token, simply run the method shown below:
 
 ```ruby
+# Set the user's access token
 Noti::Token.revoke_access_token('a96dca45-bd18-63bc-2b19-2b3f5ce711ca')
 ```
 
